@@ -1,0 +1,51 @@
+/* Font Settings */
+@font-face {
+  font-family: 'Time Normal';
+  src: url('../fonts/Time\_Normal.ttf');
+}
+
+@font-face {
+  font-family: 'Time Italic';
+  src: url('../fonts/Time\_Italic.ttf');
+}
+
+body {
+  font-family: "Time Normal";
+  /* font-size: 32px; */
+}
+
+.calculator {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  min-height: 30px;
+}
+
+.input {
+  display: flex;
+  max-width: 600px;
+}
+
+.numpad {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  flex-wrap: wrap;
+  flex-grow: 0;
+}
+
+.operators {
+  display: flex;
+  max-width: 200px;
+  flex-wrap: wrap;
+}
+
+.num, .op {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border: 2px black;
+}
